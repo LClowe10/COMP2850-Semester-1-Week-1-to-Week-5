@@ -1,3 +1,8 @@
 // Task 3.1: command line arguments
 
 import kotlin.system.exitProcess
+
+fun main(argv: Array<String>) {
+    println(argv[0])
+    println(argv[1])
+}
