@@ -2,3 +2,8 @@
 
 val numbers = listOf(9, 3, 6, 2, 8, 5)
 println(numbers)
+println(numbers[0])
+println(numbers.slice(2..4))
+println(numbers.first)
+println(numbers.second)
+numbers.add(1)
