@@ -1,5 +1,5 @@
 // Task 8.3: functions for temperature analysis
-
+package task8_3
 import kotlin.io.path.Path
 import kotlin.io.path.forEachLine
 
@@ -7,6 +7,11 @@ typealias Record = Pair<String,Double>
 
 fun fetchData(filename: String) = buildList {
     // Finish the implementation of this function
+    val filePath = Path(filename)
+    filePath.forEachLine {
+        var parts = it.split(',')
+        add(Record(parts[0], parts[1].toDouble()))
+    }
 }
 
 // Challenge: compute average temperature with one line of code

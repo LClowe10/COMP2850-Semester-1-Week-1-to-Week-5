@@ -1,3 +1,5 @@
+import kotlin.system.exitProcess
+
 // Task 4.2: use of if and range
 fun main() {
     val a = "margarita"
@@ -17,10 +19,13 @@ fun main() {
     val pizzaChoice = readln().lowercase()
 
     if (pizzaChoice in "a".."d") {
-	    println("Order Accepted")
+        println("Order Accepted")
+        exitProcess(0)
     }
     else {
-	println("Invalid Choice!")
+        println("Invalid Choice!")
+        exitProcess(1)
+    }
+
 }
-    
-}
+
