@@ -6,9 +6,9 @@ class Point:
         self.y = y
 
     def distance(self):
-        return (((self.x) ** 2) - ((self.y) ** 2)) ** 0.5
+        return (((self.x) ** 2) + ((self.y) ** 2)) ** 0.5
 
     def distanceTo(self, x2, y2):
-        return (((x2 - self.x) ** 2) - ((y2 - self.y) ** 2)) ** 0.5
+        return (((x2 - self.x) ** 2) + ((y2 - self.y) ** 2)) ** 0.5
 
 

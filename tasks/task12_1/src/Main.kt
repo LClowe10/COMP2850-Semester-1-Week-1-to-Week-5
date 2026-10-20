@@ -6,5 +6,4 @@ fun main() {
     println(p.y)
     println(p.distance())
     println(p.distanceTo(4.5, 7.0))
-
 }

@@ -7,6 +7,6 @@ You must create a `Point` class in `src/Point.kt`, representing a point in
 demonstrates use of the class.
 
 The final step is to create the equivalent Python code, in the files
-`python/point.py` and `python/main.py`.
+`../task11_4_2/python` and `../task11_4_2/python`.
 
 See the Programming Guide for full details of what is required.
