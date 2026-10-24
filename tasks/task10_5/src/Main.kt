@@ -3,12 +3,9 @@
 import kotlin.system.exitProcess
 
 fun display(text: String?) {
-    when (text) {
-        null -> println("?")
-        else -> println(text.uppercase())
-    }
+    println(text?.uppercase() ?: "☹️")
 }
-
+tasks/task10_5
 fun main(args: Array<String>) {
     if (args.size != 1) {
         println("Single word required as a command line argument")
