@@ -8,4 +8,16 @@ import io.kotest.matchers.shouldBe
 @Suppress("unused")
 class MoneyTest : FreeSpec({
     // Write your unit tests here
+    "Can create a Money" {
+        val m = Money(1, 50)
+        withClue("euros") { m.euros shouldBe 1 }
+        withClue("cents") { m.cents shouldBe 50 }
+    }
+
+    "Can create a different Money" {
+        val m = Money(2, 99)
+        withClue("euros") { m.euros shouldBe 2 }
+        withClue("cents") { m.cents shouldBe 99 }
+    }
+    
 })
