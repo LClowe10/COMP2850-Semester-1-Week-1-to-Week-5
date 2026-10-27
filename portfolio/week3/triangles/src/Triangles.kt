@@ -1,4 +1,4 @@
-// COMP2850 Portfolio: Week 2
+// COMP2850 Portfolio: Week 3
 // Functions for working with triangle geometry
 
 import kotlin.math.sqrt
