@@ -4,11 +4,7 @@ fun main() {
     // Write code to demonstrate the classes here
     val account1 = SavingsAccount("Lucas Clowe", 1.8)
     account1.deposit(1250)
-    account1.applyInterest()
-    account1.applyInterest()
-    account1.applyInterest()
-    account1.applyInterest()
-    account1.applyInterest()
+    account1.applyInterest(5)
     account1.withdraw(50)
     println(account1.balance)
 
